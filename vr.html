@@ -1,0 +1,448 @@
+<!--
+  ignite logo at back
+-->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://rawgit.com/oscarmarinmiro/aframe-video-controls/master/dist/aframe-video-controls.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body >
+    <a-scene >
+      <a-entity environment="preset: starry;dressingAmount: 900"></a-entity>
+
+      <a-assets>
+        <img
+          id="my-image"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2Fignite%232.png?v=1580958872937"
+        />
+        <img
+          id="escape-room"
+          src="/asset/Escape_room.png"
+        />
+        <img
+          id="bug-bounty"
+          src="/asset/Bug_Bounty.png"
+        />
+        <img
+          id="hackthon"
+          src="/asset/hackthon.png"
+        />
+        <img
+          id="placement"
+          src="/asset/mock_placement.png"
+        />
+        <img
+          id="brain-chase"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2Fbrain%20chase.png?v=1580820951617"
+        />
+        <img
+          id="design-x"
+          src="/asset/designX (2).png"
+        />
+        <img
+          id="webber"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2FWeber%231.png?v=1580822502714"
+        />
+        <!-- sponsors -->
+        <img
+          id="equalEx"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2FIMG-20200212-WA0032.jpg?v=1581532432895"
+        />
+        <img
+          id="imperial"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2F20200213_005545.jpg?v=1581535813164"
+        />
+        <img
+          id="silverline"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2F20200213_005631.jpg?v=1581535813564"
+        />
+        <img
+          id="cafe"
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2F20200213_005727.jpg?v=1581535813681"
+        />
+      </a-assets>
+
+      <!-- Using the asset management system. -->
+      
+      <a-curvedimage
+        src="#hackthon"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 220 0"
+        scale="3.3 5 3.25"
+        position="-28.72864 8.26 -5.0484"
+        material="vertexColors: face"
+        geometry="thetaLength: 61.23"
+      ></a-curvedimage>
+
+      <a-curvedimage
+        src="#design-x"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0.05 181.26 -1.8099999999999998"
+        scale="3.3 5 3.25"
+        position="-21.87 8.88 -16.2"
+        material="vertexColors: face"
+        geometry="thetaLength: 61.23"
+        event-set__enter="_event: mouseenter; _target: #design_x_text; visible: true"
+        event-set__leave="_event: mouseleave; _target: #design_x_text; visible: false"
+      ></a-curvedimage>
+       <!-- center ignite logo -->
+      <a-curvedimage
+        src="#my-image"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 150 0"
+        scale="2.38 2.74 1.71"
+        position="0.99317 8.88064 -10.98811"
+        material=""
+        geometry="thetaLength: 50 ;skipCache: true"
+        link="href: https://mpulseignite.tech; title: My Homepage; image: #my-image"
+      ></a-curvedimage>
+
+      <a-curvedimage
+        src="#bug-bounty"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 130 0"
+        scale="2.38 2.74 1.71"
+        position="18.059317 7.88064 -10.28811"
+        material=""
+        geometry="thetaLength: 50"
+        event-set__enter="_event: mouseenter; _target: #bug_bounty_text; visible: true"
+        event-set__leave="_event: mouseleave; _target: #bug_bounty_text; visible: false"
+        link="href: https://mpulseignite.tech/events; title: My Homepage; image: #bug-bounty"
+      ></a-curvedimage>
+
+      <a-curvedimage
+        src="#placement"
+        height="8.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 70 0"
+        scale="2.21 1.84 5.87"
+        position="14.96 7.16 -10.26682"
+        material=""
+        geometry="thetaLength: 50"
+      ></a-curvedimage>
+->
+
+      <!-- back -->
+      <a-curvedimage
+        src="#escape-room"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 53.75719217035436 0"
+        scale="4.21 9.84 8.87"
+        position="25.96 8.16 10.26682"
+        material=""
+        geometry="thetaLength: 50; skipCache: true"
+        animation="property: object3D.position.y; to: 8; dir: alternate; loop: true"
+        event-set__enter="_event: mouseenter; _target: #igniteText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #igniteText; visible: false"
+      ></a-curvedimage>
+      <!-- sponsors -->
+      <!-- <a-curvedimage
+        src="#equalEx"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 -70 0"
+        scale="4 4.25 1.8"
+        position="-16.98349 11.80591 -0.44861"
+        material="height: 256.14"
+        geometry="height: 1.63; radius: 6.2; thetaLength: 50"
+        event-set__enter="_event: mouseenter; _target: #equalText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #equalText; visible: false"
+        event-set__enter__1="_event: mouseenter; _target: #titleText; visible: true"
+        event-set__leave__1="_event: mouseleave; _target: #titleText; visible: false"
+      ></a-curvedimage>
+
+      <a-curvedimage
+        src="#cafe"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 -80.41176175763539 0"
+        scale="1.42 3.42 1.85"
+        position="-8.48593 3.1914 11.3428"
+        material="height: 256.14"
+        geometry="height: 1.63; radius: 4.76; thetaLength: 50"
+        event-set__enter="_event: mouseenter; _target: #foodText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #foodText; visible: false"
+      ></a-curvedimage>
+
+      <a-curvedimage
+        src="#imperial"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 -92.19922247686182 0"
+        scale="1.35 3.38 1.85"
+        position="-11.10798 3.06961 7.30851"
+        material="height: 256.14"
+        geometry="height: 1.63; radius: 4.54; thetaLength: 50"
+        event-set__enter="_event: mouseenter; _target: #imperialText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #imperialText; visible: false"
+      ></a-curvedimage>
+
+      <a-curvedimage
+        src="#silverline"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 -111.42367537688632 0"
+        scale="1.18 3.03 2"
+        position="-9.93053 2.939 3.60584"
+        material="height: 256.14"
+        geometry="height: 1.63; radius: 4.81; thetaLength: 50"
+        event-set__enter="_event: mouseenter; _target: #silverText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #silverText; visible: false"
+      ></a-curvedimage> -->
+      <!-- design
+      <a-image
+        src="#imperial"
+        height="3.0"
+        radius="5.7"
+        theta-length="50"
+        rotation="0 123.86659981374241 0"
+        scale="3 3 3"
+        position="-17.29147 4.81994 19.14056"
+        material="height: 256.14"
+        geometry="primitive: torusKnot; radius: 6.2"
+      ></a-image>
+ -->
+
+      <!-- text -->
+       <a-entity 
+       id="design_x_text"
+        text="value: Event on 20 March"
+        position="-11.87 1.8 -16.2"
+        scale="12 12 12"
+        rotation="-2.33 86.9 2.88"
+        visible="false"
+      ></a-entity>
+     <!-- <a-entity
+        text="value: Brain Chase"
+        position="-21.45946 3.25783 -26.26541"
+        scale="15 15 15"
+        rotation="0 47.645451369693866 0"
+      ></a-entity>
+
+      <a-entity
+        text="value: Clash Of Coders"
+        position="-3.69373 4.5 -23.24273"
+        scale="15 15 15"
+        rotation="0 -1.1705527754522718 0"
+      ></a-entity>-->
+
+      <a-entity
+        id="bug_bounty_text"
+        text="value: 20 March "
+        position="18.78971 2.04866 -10.71619"
+        scale="15 15 15"
+        rotation="0 -12.18176 0"
+        visible="false"
+      ></a-entity>
+      
+
+       <!--<a-entity
+        text="value: Mock Placement"
+        position="22.01652 3.05099 -10.77911"
+        scale="15 15 15"
+        rotation="0 -48.896791194259585 0"
+      ></a-entity>
+
+      <a-entity
+        text="value: Webber"
+        position="26.99923 2.21873 1.27228"
+        scale="15 15 15"
+        rotation="0 -82.43602164783258 -0.14974"
+      ></a-entity> -->
+
+      <a-entity
+       
+        text="value: PES's Modern College Of Engineering, Pune; color:red"        
+        position="3.083534 13.70594 -15.74499"
+        scale="20 20 20"
+        rotation=""
+      ></a-entity>
+
+      <a-entity
+      text="value:IT   Department "      
+      position="10.13534 11.90594 -15.74499"
+      scale="28 28 28"
+      rotation=""
+    ></a-entity>
+
+    <a-entity
+      text=" value:Presents "      
+      position="6.13534 9.90594 -15.74499"
+      scale="15 15 15"
+      rotation=""
+    ></a-entity>
+    
+    <a-entity
+    text="value:IGNITE YOUR IMAGINATION ;color:#80ffff"      
+    position="5.13534 3.0 -15.74499"
+    scale="20 20 20"
+    rotation=""
+  ></a-entity>
+  <a-entity
+    text="value:POWER YOUR MPULSE ;color:#80ffff"      
+    position="6.13534 2.0 -15.74499"
+    scale="20 20 20"
+    rotation=""
+  ></a-entity>
+
+
+      <!-- sponsors -->
+
+      <a-entity
+        text="value: SPONSORS"
+        position="-25.48725 15.1208 5.64262"
+        scale="18 18 18"
+        rotation="0 123.86316206697163 0"
+      ></a-entity>
+
+      <a-entity
+        id="equalText"
+        text="value: Title Sponsor; color: #ffff00;"
+        position="-25.48725 7.26439 5.64262"
+        scale="18 18 18"
+        rotation="0 123.86316206697163 0"
+        visible="false"
+      ></a-entity>
+
+      <a-entity
+        id="imperialText"
+        text="value: Associate Sponsor"
+        position="-12.51476 0.19779 3.7532"
+        scale="8 8 8"
+        rotation="0 119.50008845705041 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="silverText"
+        text="value: Associate Sponsor"
+        position="-13.46334 0.16957 -0.60112"
+        scale="8 8 8"
+        rotation="0 102.35489939555565 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="foodText"
+        text="value: Food Partner"
+        position="-11.33868 0.18779 7.2352"
+        scale="8 8 8"
+        rotation="0 127.95178889302518 0"
+        visible="false"
+      ></a-entity>
+      <a-entity
+        id="titleText"
+        text="value: EQUAL EXPERTS : MAKING SOFTWARE. BETTER.; color: #80ffff"
+        position="-12.28004 0.32624 6.43378"
+        scale="8 8 8"
+        rotation="0 114.82761763775854 0"
+        visible="false"
+      ></a-entity>
+
+      <!-- <a-entity
+        id="infoText"
+        text="value: Rotate back to watch promo video; color: #ff8080; font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt"
+        position="0.23951 1.32922 -2.12293"
+        scale="2 2 2"
+      ></a-entity> -->
+
+      <a-entity
+        id="igniteText"
+        text="value: #Learn #Explore #Innovate; color: #ff8040; font: https://cdn.aframe.io/fonts/Aileron-Semibold.fnt"
+        position="21.27013 1.34299 13.061995"
+        scale="20 20 20"
+        rotation="4.019871890637856 -102.39271461003429 0"
+        visible="false"
+      ></a-entity>
+
+      <!--
+      <a-link
+        href="content.html"
+        title="keep pointer here to watch promo"
+        position="0 4.53 -17.14"
+        geometry="primitive: circle; segments: 64; thetaLength: 0"
+        material="shader: portal; side: double; borderEnabled: 0"
+        link=""
+        scale="3 3 3"
+      >
+      </a-link>
+-->
+      <!-- //text -->
+      <a-assets>
+        <!--
+        <audio
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2FMBB_-_Beach_(Vlog_No_Copyright_Music)(256k)?v=1580852962855"
+          autoplay="true"
+          position="0 2 20"
+        ></audio>
+        
+        <a-sound src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2FMBB_-_Beach_(Vlog_No_Copyright_Music)(256k)?v=1580852962855"
+          position="-3 1 -4"></a-sound>
+        -->
+      </a-assets>
+
+      <a-assets>
+        <video
+          id="myvideo"
+          autoplay
+          loop="true"
+          src="ignite.mp4"
+        ></video>
+      </a-assets>
+      <a-video
+      src="#myvideo"
+      width="5"
+      height="2.6"
+      radius="5.7"
+      position="3.33228 5.17 15.58"
+      material=""
+      geometry="height: 2.64"
+      rotation="0 -172.95304003819032 0"
+      scale="6 6 6"
+    ></a-video>
+      <a-entity
+        video-controls="src:#myvideo"
+        position="3.33228 5.17 15.58"
+        event-set__enter="_event: mouseenter; _target: #infoText; visible: true"
+        event-set__leave="_event: mouseleave; _target: #infoText; visible: false"
+        visible="false"
+      ></a-entity>
+      <!--
+      <a-assets>
+        <audio
+          src="https://cdn.glitch.com/887246ca-ea31-4595-bb5e-3d75aae7534e%2FMBB_-_Beach_(Vlog_No_Copyright_Music)(256k)?v=1580852962855"
+          autoplay
+          preload
+        ></audio>
+      </a-assets>
+
+-->
+      <a-camera>
+        <a-cursor
+          color="#fff"
+          material=""
+          raycaster=""
+          cursor="fuseTimeout: 500"
+          geometry=""
+        ></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
