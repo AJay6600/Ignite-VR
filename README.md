@@ -10,46 +10,40 @@ The main objectives of this project are:
 
 
 ## Project Images
-![Screenshot (31)](https://github.com/AJay6600/CarPoint/assets/90677720/4391decd-84d9-4e56-9f1e-050e1fca20ad)
-![Screenshot (32)](https://github.com/AJay6600/CarPoint/assets/90677720/294f6409-77ee-4613-b27e-470a409e8d3f)
-![Screenshot (33)](https://github.com/AJay6600/CarPoint/assets/90677720/7d8821aa-4cf7-4dc1-a882-85408c62bb7c)
-![Screenshot (34)](https://github.com/AJay6600/CarPoint/assets/90677720/06b6e224-83b7-4b84-90ce-48cf3769bf62)
-![Screenshot (36)](https://github.com/AJay6600/CarPoint/assets/90677720/b29f1393-3462-4d1b-983e-b52864f78917)
-Clone this repo to explore more!
+![s1](https://github.com/AJay6600/Ignite-VR/assets/110582796/2317ae87-0de2-4693-8c62-08367c418657)
+
+![s2](https://github.com/AJay6600/Ignite-VR/assets/110582796/276e9f38-e7fe-4bd9-9947-8ec42259302e)
+
+![s3](https://github.com/AJay6600/Ignite-VR/assets/110582796/2fb90965-ed14-45e0-8bf2-562cafecaeb8)
+
+![s4](https://github.com/AJay6600/Ignite-VR/assets/110582796/7c4036a4-1dd3-498b-9230-a7e57f72d4bb)
 
 
 
 
-## Installation
-```python
-pip install -r requirements.txt
+## Requirement
+```
+HTML
+AFrame
 ```
 
 ## Usage
-Run this single command in same directory, then good to go!
-```python
-python manage.py runserver
+Laod the .html file into browser
 ```
 ## Contributing
 Thank you for your interest in contributing to our project! To get started, please follow these steps:
 
 1. Fork this repository to your own GitHub account and clone it to your local machine.
-2. Set up a development environment by installing the necessary dependencies ([requirements.txt](https://github.com/AJay6600/CarPoint/blob/main/requirements.txt)) as mention above.
-3. Create a new branch for your changes: **git checkout -b my-new-feature**.
-4. Make your changes and test them thoroughly.
-5. Commit your changes with a clear and descriptive commit message: **git commit -am 'Add some feature'**.
-6. Push your changes to your fork: **git push origin my-new-feature**.
-7. Submit a pull request to the main repository with a clear description of your changes.<br>
-
-We welcome contributions of all kinds, including bug fixes, feature enhancements, documentation improvements, and more. Please ensure that your code follows our coding standards and that all tests pass before submitting a pull request. If you have any questions or need help getting started.
+2. double click on the .html file
 
 
 
-## Contact Us
-If you have any questions or suggestions about our project, please feel free to contact us:
+
+## Contact Me
+If you have any questions or suggestions about this project, please feel free to contact me:
 
 Email:
-* **[Ranjeet](mailto:contact.ranjeetkumbhar@gmail.com) - contact [dot] ranjeetkumbhar [at] gmail [dot] com**
+
 * **[Ajay](mailto:ajaymore0634@gmail.com)- ajaymore0634 [at] gmail [dot] com**
 
 
